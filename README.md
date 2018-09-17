@@ -27,8 +27,7 @@ In Order to get this Sample to work follow the steps below
 2. Clone the this repository 
 3. Export SAP SDK Frameworks   
     1. Launch the iOS Assistant which is part of the SAP Cloud Platform SDK for iOS.
-    2. From the SAP Cloud Platform SDK for iOS Assistant menu, choose the Export Frameworks item to install the SDK frameworks to the /frameworks directory in the local repository.
-   ![screen shot 2018-09-11 at 09 21 25](https://github.wdf.sap.corp/storage/user/1411/files/293ca114-b5a4-11e8-9fcf-1a7713f95608)
+    2. From the SAP Cloud Platform SDK for iOS Assistant menu, choose the Export Frameworks item to install the SDK frameworks to the /frameworks directory in the local repository. <img alt="Screen1" src="https://user-images.githubusercontent.com/28980634/45614263-377be900-ba69-11e8-9c83-eaa6c11aced1.png">
 4. Then, build & run.
 
 ## 6. and more
