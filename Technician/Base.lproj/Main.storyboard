@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ioM-Gy-EDZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map-->
+        <scene sceneID="afi-By-1NZ">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" title="Map" id="9YX-af-VXb" customClass="MapViewController" customModule="Technician" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eqn-y4-f83"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Kl-G0-xF2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qdY-bY-h8V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0vz-aP-Zhg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9YX-af-VXb" id="VgX-N3-75t"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Kl-G0-xF2" firstAttribute="top" secondItem="0vz-aP-Zhg" secondAttribute="bottom" id="DFw-dB-ZK9"/>
+                            <constraint firstAttribute="trailing" secondItem="0vz-aP-Zhg" secondAttribute="trailing" id="M0i-Od-Dmp"/>
+                            <constraint firstItem="0vz-aP-Zhg" firstAttribute="leading" secondItem="qdY-bY-h8V" secondAttribute="leading" id="jl2-HV-6R5"/>
+                            <constraint firstItem="0vz-aP-Zhg" firstAttribute="top" secondItem="Eqn-y4-f83" secondAttribute="bottom" id="rCW-07-ws4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="0vz-aP-Zhg" id="2j7-ax-5aM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pn-pm-Ca0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1119" y="-1600"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="h5B-9G-QFk">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="ioM-Gy-EDZ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oco-RP-nws">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xbh-fa-cT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1118" y="-909"/>
+        </scene>
+    </scenes>
+</document>
