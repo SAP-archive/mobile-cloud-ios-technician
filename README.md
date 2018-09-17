@@ -15,11 +15,11 @@ This reference application show cases that values for the mobile workers can be 
 ## 4. Requirements
 Use of the reference application is dependent upon the following:
 
- 1. [SAP Cloud Platform SDK for iOS](https://www.sap.com/developer/trials-downloads/additional-downloads/sap-cloud-platform-sdk-for-ios-14485.html), version 2.0 SP02 or higher
+ 1. [SAP Cloud Platform SDK for iOS](https://www.sap.com/developer/trials-downloads/additional-downloads/sap-cloud-platform-sdk-for-ios-14485.html), version 2.0 SP02 
  2. Apple Xcode 9.3
-     - New versions of Xcode, including 10-beta will be supported on a rolling basis
+     - New versions of Xcode, including 10 will be supported on a rolling basis
  3. iOS 10 or 11
-     - iOS 12-beta will be supported with Xcode 10-beta support
+     - iOS 12 will be supported with Xcode 10 support
 
 ## 5. Setup
 In Order to get this Sample to work follow the steps below  
@@ -45,7 +45,6 @@ If you need any support, have any question or have found a bug, please report it
 
 ## 8. Known Issues
 There are no known issues
-
 
 ## Authors
 Sami Lechner
