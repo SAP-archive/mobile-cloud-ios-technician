@@ -2,9 +2,7 @@
 ## 1. Introduction
 This iOS reference Application allows a service technician to see his open tickets, change the status on the tickets and view customers and products.
 
-<img width="362" alt="Screen1" src="https://user-images.githubusercontent.com/28980634/45613988-4910c100-ba68-11e8-8a4a-941663e34bdf.png">
-<img width="362" alt="Screen2" src="https://user-images.githubusercontent.com/28980634/45613994-4ca44800-ba68-11e8-8f78-549031fe55b6.png">
-<img width="362" alt="Screen3" src="https://user-images.githubusercontent.com/28980634/45614004-562db000-ba68-11e8-94de-99ad846855fc.png">
+<img width="250" alt="Screen1" src="https://user-images.githubusercontent.com/28980634/45613988-4910c100-ba68-11e8-8a4a-941663e34bdf.png"><img width="250" alt="Screen2" src="https://user-images.githubusercontent.com/28980634/45613994-4ca44800-ba68-11e8-8f78-549031fe55b6.png"><img width="250" alt="Screen3" src="https://user-images.githubusercontent.com/28980634/45614004-562db000-ba68-11e8-94de-99ad846855fc.png">
 
 
 ## 2. Business story
