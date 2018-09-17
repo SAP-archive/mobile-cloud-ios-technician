@@ -65,9 +65,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     
     private func centerMap(on location: CLLocationCoordinate2D) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location,
-                                                                  latitudinalMeters,
-                                                                  longitudinalMeters)
+        let coordinateRegion = MKCoordinateRegion(center: location,
+                                                  latitudinalMeters: latitudinalMeters,
+                                                  longitudinalMeters: longitudinalMeters)
         mapView.setRegion(coordinateRegion, animated: true)
     }
     

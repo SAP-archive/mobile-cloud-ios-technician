@@ -35,7 +35,7 @@ class SalesOrderHeaderMasterViewController: FUIFormTableViewController, SAPFiori
         self.refreshControl?.addTarget(self, action: #selector(self.refresh), for: UIControlEvents.valueChanged)
         self.tableView.addSubview(self.refreshControl!)
         // Cell height settings
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 98
         self.updateTable()
         
