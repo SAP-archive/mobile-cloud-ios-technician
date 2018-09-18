@@ -37,6 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.rootViewController = FUIInfoViewController.createSplashScreenInstanceFromStoryboard()
 
+        // Hack:  eliminate hairline from bottom of UINavigationBar  https://stackoverflow.com/a/19227158/242447
+        UINavigationBar.appearance().shadowImage = UIImage()
+        
         do {
             // Attaches a LogUploadFileHandler instance to the root of the logging system
             try SAPcpmsLogUploader.attachToRootLogger()

@@ -55,7 +55,6 @@ class UIFunctionsHelper: NSObject {
         let completedKPIChart = FUIKPIProgressView()
         completedKPIChart.chartSize = FUIKPIProgressViewSize.large
         
-        completedKPIChart.captionLabelText = "Sales-Orders Completed"
         completedKPIChart.colorScheme = .darkBackground
         
         let kpiHeader = FUIKPIHeader()
@@ -78,6 +77,7 @@ class UIFunctionsHelper: NSObject {
         
         completedKPIChart.progress = Float(completedOrdersCount) / Float(totalOrdersCount)
         completedKPIChart.items = [completedOrdersFraction, unitFraction, totalOrdersFraction]
+        completedKPIChart.captionLabelText = "Sales-Orders Completed"
     }
     
     static func getOrdersCount(appDelegate : AppDelegate, logger : Logger) -> Int64 {
