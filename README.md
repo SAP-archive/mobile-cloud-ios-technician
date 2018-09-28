@@ -17,33 +17,31 @@ This reference application show cases that values for the mobile workers can be 
 Use of the reference application is dependent upon the following:
 
  1. [SAP Cloud Platform SDK for iOS](https://www.sap.com/developer/trials-downloads/additional-downloads/sap-cloud-platform-sdk-for-ios-14485.html), version 2.0 SP02 
- 2. Apple Xcode 9.3
+ 2. [Apple Xcode 9.3] (https://developer.apple.com/xcode/)
      - New versions of Xcode
  3. iOS 10 or 11
  
 ## Setup
 In Order to get this Sample to work follow the steps below  
 1. Install the [SAP Cloud Platform SDK for iOS](https://www.sap.com/developer/tutorial-navigator/mobile-interactive-tutorials/sdk-tools/ios-assistant/basic.html)
-2. Clone the this repository 
+2. [Clone this repository to your local computer](https://help.github.com/articles/cloning-a-repository/)
 3. Export SAP SDK Frameworks   
     1. Launch the iOS Assistant which is part of the SAP Cloud Platform SDK for iOS.
     2. From the SAP Cloud Platform SDK for iOS Assistant menu, choose the Export Frameworks item to install the SDK frameworks to the /frameworks directory in the local repository. <img alt="Screen1" src="https://user-images.githubusercontent.com/28980634/45614263-377be900-ba69-11e8-9c83-eaa6c11aced1.png">
-4. Then, build & run the project Xcode.
+4. Then, build & run the project in Xcode.
 
 ## Additional Information
 
 if you want to learn more you follow the links
 
-[SAP Cloud Platform mobile services](https://www.sap.com/developer/topics/mobile.html)
+-  [SAP Cloud Platform mobile services](https://www.sap.com/developer/topics/mobile.html)
+-  [Blueprint: Empower Field Technicians by Building Apps Using the SDK for iOS](https://cloudplatform.sap.com/scenarios/usecases/sdk-ios.html)
+-  [SAP Mobile Tutorials](https://www.sap.com/developer/tutorial-navigator/mobile-interactive-tutorials.html)
 
-[Blueprint: Empower Field Technicians by Building Apps Using the SDK for iOS](https://cloudplatform.sap.com/scenarios/usecases/sdk-ios.html)
-
-[SAP Mobile Tutorials](https://www.sap.com/developer/tutorial-navigator/mobile-interactive-tutorials.html)
-
-the sample cloud service used is a read only service.
+The sample cloud service used is a read only service.
 
 ## How to obtain support
-If you need any support, have any question or have found a bug, please report it as an issue in the repository.
+If you need any support, have any question or have found a bug, please [report it as an issue in GitHub](https://github.com/SAP/mobile-cloud-ios-technician/issues).
 
 ## Known Issues
 iOS 12 not yet supported
