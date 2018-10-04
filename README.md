@@ -52,4 +52,4 @@ iOS 12 not yet supported
 ## License
 
 Copyright (c) 2018 SAP SE or an SAP affiliate company. All rights reserved.
-This project is licensed under the SAP Sample Code License Agreement except as noted otherwise in the [LICENSE](https://github.com/SAP/cloud-espm-cloud-native/blob/master/SAP_Sample_Code_License_Agreementv1.0.docx) file.
+This project is licensed under the SAP Sample Code License Agreement except as noted otherwise in the [LICENSE](https://github.com/SAP/mobile-cloud-ios-technician/blob/master/SAP_Sample_Code_License_Agreementv1.0.docx) file.
