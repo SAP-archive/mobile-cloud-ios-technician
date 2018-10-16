@@ -55,7 +55,7 @@ class UIFunctionsHelper: NSObject {
         let completedKPIChart = FUIKPIProgressView()
         completedKPIChart.chartSize = FUIKPIProgressViewSize.large
         
-        completedKPIChart.colorScheme = .darkBackground
+        completedKPIChart.colorScheme = .dark
         
         let kpiHeader = FUIKPIHeader()
         kpiHeader.items = [completedKPIChart]

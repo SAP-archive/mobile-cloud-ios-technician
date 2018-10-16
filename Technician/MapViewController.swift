@@ -38,7 +38,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         super.viewDidAppear(animated)
         self.mapView.delegate = self
         
-        mapView.register(FioriMarker.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+//        mapView.register(FioriMarker.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         mapView.showsUserLocation = true
         
         guard let address = customerAddress else {
@@ -65,9 +65,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     
     private func centerMap(on location: CLLocationCoordinate2D) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location,
-                                                                  latitudinalMeters,
-                                                                  longitudinalMeters)
+        let coordinateRegion = MKCoordinateRegion.init(center: location,
+                                                                  latitudinalMeters: latitudinalMeters,
+                                                                  longitudinalMeters: longitudinalMeters)
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
@@ -105,7 +105,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         for appName in installedNavApps {
             let button = UIAlertAction(title: appName, style: .default, handler: { (action) in
                 if action.title == "Google Maps" {
-                    UIApplication.shared.open(URL(string:"comgooglemaps://?saddr=&daddr=\(userLocation.coordinate.latitude),\(userLocation.coordinate.longitude)&directionsmode=driving")!, options: [:], completionHandler: nil)
+                    UIApplication.shared.open(URL(string:"comgooglemaps://?saddr=&daddr=\(userLocation.coordinate.latitude),\(userLocation.coordinate.longitude)&directionsmode=driving")!, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
                 } else if action.title == "Apple Maps" {
                     let appleMapItem = MKMapItem(placemark: MKPlacemark(coordinate: userLocation.coordinate, addressDictionary:nil))
                     appleMapItem.name = self.customerAddress
@@ -127,7 +127,12 @@ class FioriMarker: FUIMarkerAnnotationView {
         willSet {
             markerTintColor = .preferredFioriColor(forStyle: .map1)
             glyphImage = FUIIconLibrary.map.marker.functionalLocation.withRenderingMode(.alwaysTemplate)
-            
+
         }
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

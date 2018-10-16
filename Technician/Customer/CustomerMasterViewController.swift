@@ -32,10 +32,10 @@ class CustomerMasterViewController: FUIFormTableViewController, SAPFioriLoadingI
         super.viewDidLoad()
         self.edgesForExtendedLayout = []
         // Add refreshcontrol UI
-        self.refreshControl?.addTarget(self, action: #selector(self.refresh), for: UIControlEvents.valueChanged)
+        self.refreshControl?.addTarget(self, action: #selector(self.refresh), for: UIControl.Event.valueChanged)
         self.tableView.addSubview(self.refreshControl!)
         // Cell height settings
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 98
         self.updateTable()
         
@@ -48,14 +48,14 @@ class CustomerMasterViewController: FUIFormTableViewController, SAPFioriLoadingI
     }
     
     private func initUI() {
-        self.kpiHeader = UIFunctionsHelper.getEmptyCompletedSalesOrdersChart()
+//        self.kpiHeader = UIFunctionsHelper.getEmptyCompletedSalesOrdersChart()
         self.tableView.tableHeaderView = self.kpiHeader
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        UIFunctionsHelper.updateSalesOrderChart(appDelegate: appDelegate, logger: self.logger, completedKPIChart: self.kpiHeader?.items[0] as! FUIKPIProgressView)
+//        UIFunctionsHelper.updateSalesOrderChart(appDelegate: appDelegate, logger: self.logger, completedKPIChart: self.kpiHeader?.items[0] as! FUIKPIProgressView)
     }
 
     // MARK: - Table view data source
